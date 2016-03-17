@@ -1,52 +1,56 @@
-
+/*
+ * [A]100
+ * [TA's advise]
+ * 1.Good Job!
+ * */
 import java.util.*;
+
 class Rectangle {
-  	double height,width,x,y;
-  	Rectangle() {
-  		this(0,0,0,0);
-  	}
-  	Rectangle(double _height, double _width, double _x, double _y) {
-  		this.height=_height;
-  		this.width=_width;
-  		this.x=_x;
-  		this.y=_y;
-  	}
+	double height, width, x, y;
 
-  	public double getheight()
-  	{
-  		return this.height;
-  	}
+	Rectangle() {
+		//Good!
+		this(0, 0, 0, 0);
+	}
 
-  	public double getwidth() {
-  		return this.width;
-  	}
+	Rectangle(double _height, double _width, double _x, double _y) {
+		this.height = _height;
+		this.width = _width;
+		this.x = _x;
+		this.y = _y;
+	}
 
-  	public double getx() {
-  		return this.x;
-  	}
+	public double getheight() {
+		return this.height;
+	}
 
-  	public double gety() {
-  		return this.y;
-  	}
+	public double getwidth() {
+		return this.width;
+	}
 
-  	public String toString() {
-  		return "java.Rectangle:" + "[ x=" + this.x + ",y=" + this.y + ",width=" + this.width + ",height=" + this.height + "]";
-  	}
+	public double getx() {
+		return this.x;
+	}
+
+	public double gety() {
+		return this.y;
+	}
+
+	public String toString() {
+		return "java.Rectangle:" + "[ x=" + this.x + ",y=" + this.y + ",width=" + this.width + ",height=" + this.height
+				+ "]";
+	}
 }
-
-
-
-
 
 public class RectangleTester {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Scanner console = new Scanner(System.in);		
-		double height,width,x,y;
+		Scanner console = new Scanner(System.in);
+		double height, width, x, y;
 
 		System.out.println("--------the first rectangle on--------");
-        
+
 		System.out.println("height=");
 		height = console.nextDouble();
 		System.out.println("width=");
@@ -60,12 +64,11 @@ public class RectangleTester {
 		System.out.println("Area:" + rectangle1.getwidth() * rectangle1.getheight());
 		System.out.println("Perimeter:" + (rectangle1.getwidth() * 2 + rectangle1.getheight() * 2));
 
-		
 		System.out.println("-------- the first rectangle end--------");
 		System.out.println("");
 		System.out.println("");
 		System.out.println("-------- the second rectangle on--------");
-		
+
 		System.out.println("height:");
 		height = console.nextDouble();
 		System.out.println("width:");
@@ -81,7 +84,7 @@ public class RectangleTester {
 
 		System.out.println("-------- the second rectangle end --------");
 		System.out.println("end of RectangleTester thanks");
-		
+
 		console.close();
 	}
 
